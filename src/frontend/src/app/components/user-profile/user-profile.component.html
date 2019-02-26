@@ -1,0 +1,81 @@
+<form [formGroup]="formGroupUserProfile">
+  <input type="hidden" name="id" formControlName="id"/>
+  <div class="form-group row">
+    <label for="inputInitials" class="col-sm-2 col-form-label">Initials</label>
+    <div class="col-sm-5">
+      <input type="text" readonly class="form-control form-control-sm" id="inputInitials" placeholder="Initials"
+             name="initials" formControlName="initials">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="inputFirstName" class="col-sm-2 col-form-label">FirstName</label>
+    <div class="col-sm-5">
+      <input type="text" readonly class="form-control form-control-sm" id="inputFirstName" placeholder="FirstName"
+             name="firstName" formControlName="firstName">
+    </div>
+    <div class="col-sm-1">
+      <button class="btn btn-sm btn-secondary" type="button" *ngIf="isInOffice | async" (click)="sendToPowerPoint('firstName')">Send</button>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputLastName" class="col-sm-2 col-form-label">LastName</label>
+    <div class="col-sm-5">
+      <input type="text" readonly class="form-control form-control-sm" id="inputLastName" placeholder="LastName"
+             formControlName="lastName">
+    </div>
+    <div class="col-sm-1">
+      <button class="btn btn-sm btn-secondary" type="button" *ngIf="isInOffice | async" (click)="sendToPowerPoint('lastName')">Send</button>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="inputFullName" class="col-sm-2 col-form-label">FullName</label>
+    <div class="col-sm-5">
+      <input type="text" readonly class="form-control form-control-sm" id="inputFullName" placeholder="FullName"
+             name="fullName" formControlName="fullName">
+    </div>
+    <div class="col-sm-1">
+      <button class="btn btn-sm btn-secondary" type="button" *ngIf="isInOffice | async" (click)="sendToPowerPoint('fullName')">Send</button>
+    </div>
+
+  </div>
+  <div class="form-group row">
+    <label for="inputBlog" class="col-sm-2 col-form-label">Blog</label>
+    <div class="col-sm-5">
+      <input type="text" readonly class="form-control form-control-sm" id="inputBlog" placeholder="Blog URL"
+             formControlName="blog">
+    </div>
+    <div class="col-sm-1">
+      <button class="btn btn-sm btn-secondary" type="button" *ngIf="isInOffice | async" (click)="sendToPowerPoint('blog')">Send</button>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="inputMail" class="col-sm-2 col-form-label">Mail</label>
+    <div class="col-sm-5">
+      <input type="email" readonly class="form-control form-control-sm" id="inputMail" placeholder="Mailaddress"
+             formControlName="mail">
+    </div>
+    <div class="col-sm-1">
+      <button class="btn btn-sm btn-secondary" type="button" *ngIf="isInOffice | async" (click)="sendToPowerPoint('mail')">Send</button>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="inputTwitter" class="col-sm-2 col-form-label">Twitter</label>
+    <div class="col-sm-5">
+      <div class="input-group input-group-sm">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="text" readonly class="form-control form-control-sm" id="inputTwitter" placeholder="Twitter Handle"
+               formControlName="twitter">
+      </div>
+    </div>
+    <div class="col-sm-1">
+      <button class="btn btn-sm btn-secondary" type="button" *ngIf="isInOffice | async" (click)="sendToPowerPoint('twitter')">Send</button>
+    </div>
+  </div>
+</form>
+

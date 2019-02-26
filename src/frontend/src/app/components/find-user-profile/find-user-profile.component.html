@@ -1,0 +1,21 @@
+<h4>Find user profile</h4>
+<form [formGroup]="formModel">
+  <div class="form-group row">
+    <label for="inputQuery" class="col-sm-2 col-form-label">Query</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control form-control-sm" id="inputQuery" placeholder="Search Query..."
+             name="query" formControlName="query">
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-sm-6 offset-3">
+      <button class="btn btn-sm btn-secondary btn-block" type="button" (click)="findUserProfile()">Search Profile</button>
+      <div class="alert alert-danger mt-3" role="alert" *ngIf="nothingFound">
+        Sorry, no profile found!
+      </div>
+    </div>
+  </div>
+
+</form>
+
+

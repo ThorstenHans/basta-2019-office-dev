@@ -1,0 +1,25 @@
+<h4>All Presentation Stats <small>(<span>{{historyData.length}}</span>)</small></h4>
+<div class="m-3">
+<button class="btn btn-sm btn-secondary mr-2" (click)="sendToExcel()">To Excel</button>
+<button class="btn btn-sm btn-secondary mr-2" (click)="sortByFullname()">Sort by Name</button>
+<button class="btn btn-sm btn-secondary mr-2" (click)="sortBySessions()">Sort by No of Sessions</button>
+<button class="btn btn-sm btn-secondary mr-2" (click)="createChart()">Create Chart</button>
+</div>
+<table class="table table-bordered table-striped">
+  <thead>
+  <tr>
+    <th>Initials</th>
+    <th>Year</th>
+    <th>Topic</th>
+    <th>Count</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let hd of historyData">
+    <td>{{hd.initials}}</td>
+    <td>{{hd.year}}</td>
+    <td>{{hd.topic}}</td>
+    <td>{{hd.count}}</td>
+  </tr>
+  </tbody>
+</table>

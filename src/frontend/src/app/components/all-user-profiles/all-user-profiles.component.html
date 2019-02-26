@@ -1,0 +1,15 @@
+<h4>All user profiles <small>(<span>{{userProfiles.length}}</span>)</small></h4>
+<table class="table table-bordered table-striped">
+  <thead>
+  <tr>
+    <th>Initials</th>
+    <th>Name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let profile of userProfiles" (click)="openProfile(profile)">
+    <td>{{profile.initials}}</td>
+    <td>{{profile.fullName}}</td>
+  </tr>
+  </tbody>
+</table>

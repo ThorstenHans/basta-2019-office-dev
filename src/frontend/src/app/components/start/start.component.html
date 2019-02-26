@@ -1,0 +1,11 @@
+<h4>Start</h4>
+<div class="grid">
+  <tt-feature title="List all User Profiles" description="Get a list containing all co-workers."
+              target="/all-user-profiles"></tt-feature>
+  <tt-feature title="Find a User Profile" description="Find a specific User Profile by initials"
+              target="/find-user-profile"></tt-feature>
+  <tt-feature  *ngIf="isInPowerPoint | async" title="Navigate in PowerPoint" description="Use common Office Add-in JS APis to navigate between slides"
+              target="/navigate-slides"></tt-feature>
+  <tt-feature title="Presentation History" description="Get presentation stats."
+              target="/all-presentation-stats"></tt-feature>
+</div>

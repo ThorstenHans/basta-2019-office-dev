@@ -13,7 +13,7 @@
   <Description DefaultValue="Thinktecture Presentation Helper for PowerPoint"/>
   <IconUrl DefaultValue="https://localhost:4200/assets/images/logo-32.png" />
   <HighResolutionIconUrl DefaultValue="https://localhost:4200/assets/images/logo-high-res.png"/>
-  <SupportUrl DefaultValue="https://TT.com"/>
+  <SupportUrl DefaultValue="https://thinktecture.com"/>
   <AppDomains>
     <AppDomain>https://localhost:4200</AppDomain>
     <AppDomain>https://localhost:5001</AppDomain>

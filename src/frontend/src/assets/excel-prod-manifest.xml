@@ -20,7 +20,7 @@
   <Description DefaultValue="Thinktecture Presentation Helper for Excel"/>
   <IconUrl DefaultValue="https://basta-2019-office-dev-app-31276.azurewebsites.net/assets/images/logo-32.png" />
   <HighResolutionIconUrl DefaultValue="https://basta-2019-office-dev-app-31276.azurewebsites.net/assets/images/logo-high-res.png"/>
-  <SupportUrl DefaultValue="https://TT.com"/>
+  <SupportUrl DefaultValue="https://thinktecture.com"/>
   <AppDomains>
     <AppDomain>https://basta-2019-office-api.azurewebsites.net</AppDomain>
     <AppDomain>https://basta-2019-office-dev-app-31276.azurewebsites.net</AppDomain>

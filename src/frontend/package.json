@@ -13,7 +13,13 @@
     "sideload-powerpoint": "office-toolbox sideload -m ./src/assets/powerpoint-manifest.xml -a PowerPoint",
     "sideload-excel": "office-toolbox sideload -m ./src/assets/excel-manifest.xml -a Excel",
     "bust-powerpoint-cache": "rm ~/Library/Containers/com.microsoft.Powerpoint/Data/documents/wef/powerpoint-manifest.xml",
-    "bust-excel-cache": "rm ~/Library/Containers/com.microsoft.Excel/Data/documents/wef/excel-manifest.xml"
+    "bust-excel-cache": "rm ~/Library/Containers/com.microsoft.Excel/Data/documents/wef/excel-manifest.xml",
+    "validate-powerpoint-prod": "office-toolbox validate -m ./src/assets/powerpoint-prod-manifest.xml",
+    "validate-excel-prod": "office-toolbox validate -m ./src/assets/excel-prod-manifest.xml",
+    "sideload-powerpoint-prod": "office-toolbox sideload -m ./src/assets/powerpoint-prod-manifest.xml -a PowerPoint",
+    "sideload-excel-prod": "office-toolbox sideload -m ./src/assets/excel-prod-manifest.xml -a Excel",
+    "bust-powerpoint-cache-prod": "rm ~/Library/Containers/com.microsoft.Powerpoint/Data/documents/wef/powerpoint-prod-manifest.xml",
+    "bust-excel-cache-prod": "rm ~/Library/Containers/com.microsoft.Excel/Data/documents/wef/excel-prod-manifest.xml"
   },
   "private": true,
   "dependencies": {
